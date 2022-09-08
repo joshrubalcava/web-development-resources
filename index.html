@@ -20,27 +20,25 @@
     <title>Web Developer Resources</title>
 </head>
 <body>
-    <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light fixed-top" color-on-scroll="400">
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light fixed-top p-0">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand nav-headers" href="#home">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link nav-headers" href="#">HTML, CSS, JavaScript</a>
-                    <a class="nav-link nav-headers" href="#">Bootstrap</a>
-                    <a class="nav-link nav-headers" href="#">React</a>
-                    <a class="nav-link nav-headers" href="#">Node.js</a>
+                    <a class="nav-link nav-headers" href="#html-css-js">HTML, CSS, JavaScript</a>
+                    <a class="nav-link nav-headers" href="#additional-resources">Advanced Starter Resources</a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-link nav-headers" aria-current="page" href="https://github.com/joshrubalcava" target="_blank"><img src="/assets/GitHub-Mark-32px.png"></a>
+                    <a class="nav-link nav-headers" aria-current="page" href="https://github.com/joshrubalcava" target="_blank"><img src="/assets/GitHub-Mark-32px.png" alt=""></a>
                     <a class="nav-link nav-headers" href="https://www.linkedin.com/in/joshua-rubalcava-9a7a20158/" target="_blank"><img src="/assets/LI-In-Bug.png" alt="" width="32px" height="32px"></a>
                 </div>
             </div>
         </div>
     </nav>
-    <div class="container d-flex justify-content-center align-items-center page-header-container">
+    <div class="container-fluid d-flex justify-content-center align-items-center page-header-container" id="home">
         <div class="row">
             <div class="page-header">
                 <div class="text-center">
@@ -52,33 +50,86 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="html-css-js-section">
-            <div class="text-center d-flex justify-content-evenly">
-                <img src="/assets/html-5.png" alt="" class="html-css-js-header-images">
-                <img src="/assets/css-3.png" alt="" class="html-css-js-header-images">
-                <img src="/assets/js.png" alt="" class="html-css-js-header-images">
+    <div class="container-fluid" id="html-css-js">
+        <div class="resources-section">
+            <div class="text-center d-flex justify-content-center">
+                <img src="/assets/undraw_static_assets_rpm6.svg" alt="" class="html-css-js-header-svg">
             </div>
             <div class="card-section text-center d-flex justify-content-around flex-wrap">
                 <div class="card">
                     <div class="card-body">
-                        <img src="https://cdn.neow.in/news/images/uploaded/2022/03/1648072109_mdn_story.jpg" alt="" class="resource-img-size">
-                        <h3 class="card-title">MDN Web Docs</h3>
-                        <p class="card-text">MDN Web Docs is one of the largest sources of information on anything related to HTML, CSS, and JavaScript.</p>
-                        <button type="button" class="btn btn-primary">MDN Official Website</button>
+                        <img src="/assets/fcc_secondary_large.svg" alt="" class="resource-img-size">
+                        <h3 class="card-title">freeCodeCamp</h3>
+                        <p class="card-text">freeCodeCamp offers a full curriculum with practice exercises so that new developers can learn the basics. They also have many articles containing helpful explanations and/or interesting topics about the tech industry.</p>
+                        <a href="https://www.freecodecamp.org/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">freeCodeCamp Official Website</button></a>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <img src="https://cdn.neow.in/news/images/uploaded/2022/03/1648072109_mdn_story.jpg" alt="" class="resource-img-size">
                         <h3 class="card-title">MDN Web Docs</h3>
-                        <p class="card-text">MDN Web Docs is one of the largest sources of information on anything related to HTML, CSS, and JavaScript.</p>
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <p class="card-text">MDN Web Docs is one of the largest sources of information on anything related to HTML, CSS, and JavaScript. This website has documentation on just about anything you may need.</p>
+                        <a href="https://developer.mozilla.org/en-US/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">MDN Official Website</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/Stack_Overflow-Logo.wine.svg" alt="" class="resource-img-size">
+                        <h3 class="card-title">Stack Overflow</h3>
+                        <p class="card-text">MDN Web Docs is one of the largest sources of information on anything related to HTML, CSS, and JavaScript. This website has documentation on just about anything you may need.</p>
+                        <a href="https://stackoverflow.com/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">Stack Overflow Official Website</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-fluid" id="additional-resources">
+        <div class="resources-section">
+            <div class="text-center d-flex justify-content-evenly">
+                <h1 class="extra-resources-title">Here are some additional resources to get you started with Frontend Libraries & Frameworks, Backend Development, and Deployment</h1>
+            </div>
+            <div class="card-section text-center d-flex justify-content-around flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/bootstrap-5-seeklogo.com.svg" alt="" class="resource-img-size">
+                        <h3 class="card-title">Bootstrap</h3>
+                        <p class="card-text">Bootstrap is one of the most frequently used open-source CSS Frameworks that is directed towards responsive, mobile-first web development.</p>
+                        <a href="https://getbootstrap.com/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">Bootstrap Official Website</button></a>
+                    </div>
+                </div>
+            <div class="card-section text-center d-flex justify-content-around flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/react-seeklogo.com.svg" alt="" class="resource-img-size">
+                        <h3 class="card-title">React</h3>
+                        <p class="card-text">One of the most popular open-source JavaScript Libraries for building user interfaces based on UI components. React was developed and maintained by Meta.</p>
+                        <a href="https://reactjs.org/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">React Official Website</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-section text-center d-flex justify-content-around flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/nodejs-seeklogo.com.svg" alt="" class="resource-img-size">
+                        <h3 class="card-title">Node.js</h3>
+                        <p class="card-text">A popular transition after learning frontend development. Node.js is an open-source, cross-platform, backend JavaScript runtime environment that runs on a JavaScript Engine and executes JavaScript code outside the web browser. </p>
+                        <a href="https://nodejs.org/en/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">Node.js Official Website</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-section text-center d-flex justify-content-around flex-wrap">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="/assets/Netlify-Logo.wine.svg" alt="" class="resource-img-size">
+                        <h3 class="card-title">Netlify</h3>
+                        <p class="card-text">Netlify is a free and powerful choice that includes build, deploy, and serverless backend services foy your web applications and dynamic websites.</p>
+                        <a href="https://www.netlify.com/" target="_blank"><button type="button" class="website-link-btn btn btn-primary">Netlify Official Website</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
