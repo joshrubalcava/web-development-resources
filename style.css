@@ -18,14 +18,18 @@ html, body {
     transition: ease-in-out;
 }
 
+.bg-light {
+    opacity: 0.8;
+    transition-property: background-color;
+    transition: background-color .75s ease-in-out;
+}
+
 .navbar-red {
     background-color: rgba(220, 53, 69, 0.8);
     color: #FFFFFF;
+    transition: all .75s ease-in-out;
+    transition-property: background-color, color;
 }
-
-/*.navbar-custom .container-fluid .nav-headers {*/
-/*    color: w;*/
-/*}*/
 
 .page-header-container {
     height: 100vh;
@@ -66,6 +70,7 @@ html, body {
     width: 40rem;
     height: 40rem;
     margin-bottom: 5rem;
+    border: none;
 }
 
 .resource-img-size {
@@ -84,6 +89,13 @@ html, body {
 .card .card-body .website-link-btn {
     margin: 1.5rem auto;
     padding: 1.25rem 2rem;
+    background-color: rgba(220, 53, 69, 0.8);
+    border: 1px solid rgba(220, 53, 69, 0.8);
+}
+
+.card .card-body .website-link-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(220, 53, 69, 0.5);
 }
 
 .extra-resources-title {
@@ -148,5 +160,34 @@ html, body {
         height: 5rem;
         width: 5rem;
         margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .card-title, .card-text, .website-link-btn {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-description {
+        font-size: 1.25rem;
+    }
+
+    .html-css-js-header-svg {
+        height: 15rem;
+    }
+
+    .resource-img-size {
+        width: 12.5rem;
+        height: 15rem;
+    }
+
+    .card-title, .card-text, .website-link-btn {
+        font-size: 1rem;
     }
 }
