@@ -99,8 +99,58 @@ html, body {
 }
 
 .extra-resources-title {
-    margin-top: 4.5rem;
-    margin-bottom: 4.5rem;
+    /*margin-top: 4.5rem;*/
+    /*margin-bottom: 4.5rem;*/
+    margin: 3.5rem 15rem;
+}
+
+/*.input-group .name-input, .input-group .email-input {*/
+/*    border-radius: 5rem;*/
+/*}*/
+
+.input-group .name-input:focus,
+.input-group .email-input:focus {
+    box-shadow: none;
+    border-color: #28b465;
+}
+
+.form-group .message-input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.form-group .message-input:focus {
+    box-shadow: none;
+    border-bottom-color: #28b465;
+}
+
+.subscribe-btn-container .subscribe-btn {
+    background: #28b465;
+    border: 1px solid #28b465;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.subscribe-btn-container .subscribe-btn:hover {
+    background: #28b465;
+    border: 1px solid #28b465;
+    opacity: .7;
+    transition: opacity 1s ease-in-out;
+}
+
+.footer {
+    font-size: .75rem;
+    color: white;
+}
+
+.footer .github-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .github-link:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1040px) {
@@ -112,6 +162,10 @@ html, body {
     .html-css-js-header-svg {
         min-width: 100%;
         margin: 50px auto;
+    }
+
+    .extra-resources-title {
+        margin: 0 10rem 4.5rem;
     }
 }
 
