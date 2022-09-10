@@ -104,9 +104,15 @@ html, body {
     margin: 3.5rem 15rem;
 }
 
-/*.input-group .name-input, .input-group .email-input {*/
-/*    border-radius: 5rem;*/
+/*.subscribe-title {*/
+/*    font-weight: 1000;*/
 /*}*/
+
+.subscribe-subtitle {
+    color: #9a9a9a;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
 
 .input-group .name-input:focus,
 .input-group .email-input:focus {
@@ -127,16 +133,33 @@ html, body {
 
 .subscribe-btn-container .subscribe-btn {
     background: #28b465;
+    color: #FFFFFF;
     border: 1px solid #28b465;
     opacity: 1;
-    transition: opacity 1s ease-in-out;
+    transition-property: opacity, color;
+    transition: all 1s ease-in-out;
 }
 
 .subscribe-btn-container .subscribe-btn:hover {
     background: #28b465;
+    color: #FFFFFF;
     border: 1px solid #28b465;
     opacity: .7;
-    transition: opacity 1s ease-in-out;
+    transition-property: opacity, color;
+    transition: all 1s ease-in-out;
+}
+
+.thank-you-container {
+    margin-bottom: 5rem;
+}
+
+.thank-you-title {
+    margin-bottom: 2rem;
+    color: #28b465;
+}
+
+.confirmation-text {
+
 }
 
 .footer {
